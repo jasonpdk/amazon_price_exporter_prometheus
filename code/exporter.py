@@ -1,6 +1,5 @@
 from prometheus_client import start_http_server
 from prometheus_client.core import GaugeMetricFamily, CounterMetricFamily, REGISTRY
-import random
 import time
 from bs4 import BeautifulSoup
 import requests
@@ -16,7 +15,6 @@ class CustomCollector(object):
         page_response = requests.get(scrape_url, headers=headers)
         page_content = BeautifulSoup(page_response.content, "html.parser")
         price = page_content.find(id="priceblock_ourprice")
-        print(float(price.get_text()[1:]))
         converter = CurrencyConverter()
         price_eur = round(converter.convert(float(price.get_text()[1:]), 'GBP', 'EUR'), 2)
         g = GaugeMetricFamily('amazon_product_price_euro', 'Price of a product on Amazon', labels=['product'])
