@@ -6,8 +6,7 @@ import requests
 from currency_converter import CurrencyConverter
 
 scrape_urls = [
-        'https://www.amazon.co.uk/Raspberry-Pi-ARM-Cortex-A72-Bluetooth-Micro-HDMI/dp/B07TC2BK1X/ref=sr_1_3?crid=14RXXJE58G8HP&keywords=raspberry+pi+4&qid=1568552215&sprefix=raspberry+%2Caps%2C184&sr=8-3',
-        'https://www.amazon.co.uk/gp/product/B00EEH6CY8?pf_rd_p=330fbd82-d4fe-42e5-9c16-d4b886747c64&pf_rd_r=D1VWKSXJGCYAP8GT3AVP'
+        'https://www.amazon.co.uk/Raspberry-Pi-ARM-Cortex-A72-Bluetooth-Micro-HDMI/dp/B07TC2BK1X/ref=sr_1_3?crid=14RXXJE58G8HP&keywords=raspberry+pi+4&qid=1568552215&sprefix=raspberry+%2Caps%2C184&sr=8-3'
 ]
 
 headers = {
