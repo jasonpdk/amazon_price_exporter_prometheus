@@ -1,4 +1,4 @@
 beautifulsoup4==4.7.1
 CurrencyConverter==0.13.9
 prometheus-client==0.7.1
-requests==2.21.0
+requests==2.31.0
